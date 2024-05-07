@@ -1,0 +1,13 @@
+
+# env variables
+.env
+
+# data storage
+data
+
+#temporal logs 
+tmp
+
+
+#exe file 
+main

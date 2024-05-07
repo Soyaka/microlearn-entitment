@@ -1,0 +1,92 @@
+syntax = "proto3";
+
+option go_package = "github.com/Soyaka/microlearn/entitment";
+
+
+message BookmarkReq {
+    string id = 1;
+    string userId = 2;
+    string contentId = 3;
+}
+
+
+message BookmarkRes {
+    repeated string bookmarks = 1;
+}
+
+service BookmarkService {
+    rpc GetBookmark( UserID) returns (BookmarkRes);
+}
+
+
+message UserID {
+    string id = 1;
+}
+
+
+message InterestReq {
+    string id = 1;
+    string userId = 2;
+    string tech = 3;
+    string level = 4;
+    string cert = 5;
+}
+
+
+
+message InterestRes {
+    string tech = 1;
+    string level = 2;
+    string cert = 3;
+}
+
+
+
+
+service InterestService {
+    rpc GetInterests(UserID) returns (InterestRes);
+}
+
+
+message ProgressReq {
+    string id = 1;
+    string userId = 2;
+    string contentId = 3;
+    int32 progress = 4;
+}
+
+
+
+message ProgressRes {
+    string contentId = 3;
+    int32 progress = 4;
+}
+
+message ProgressListRes {
+    repeated ProgressRes progress = 1;
+}
+
+service ProgressService {
+    rpc GetProgressList(UserID) returns (ProgressListRes);
+}
+
+
+
+message SubscriptionReq {
+    string id = 1;
+    string userId  = 2;
+    string contentId = 3;
+    string created_at = 4;
+    string updated_at = 5;
+}
+
+
+message SubscriptionRes {
+    repeated string subs =1 ;
+}
+
+
+
+service SubscriptionService {
+    rpc GetSubscription(UserID) returns (SubscriptionRes);
+}
