@@ -3,7 +3,7 @@ package database
 import (
 	"log"
 
-	entitment "github.com/Soyaka/entitment/api/gen"
+	entitment "github.com/Soyaka/microlearn-entitment/api/gen"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )

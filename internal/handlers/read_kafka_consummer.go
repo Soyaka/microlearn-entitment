@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"log"
 
-	entitment "github.com/Soyaka/entitment/api/gen"
+	entitment "github.com/Soyaka/microlearn-entitment/api/gen"
 	"github.com/fatih/color"
 )
 

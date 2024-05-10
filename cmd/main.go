@@ -4,8 +4,8 @@ import (
 	"log"
 	"net"
 
-	entitment "github.com/Soyaka/entitment/api/gen"
-	"github.com/Soyaka/entitment/internal/handlers"
+	entitment "github.com/Soyaka/microlearn-entitment/api/gen"
+	"github.com/Soyaka/microlearn-entitment/internal/handlers"
 	"google.golang.org/grpc"
 )
 

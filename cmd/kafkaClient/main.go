@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	entitment "github.com/Soyaka/entitment/api/gen"
+	entitment "github.com/Soyaka/microlearn-entitment/api/gen"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/fatih/color"
 	"github.com/google/uuid"

@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	entitment "github.com/Soyaka/entitment/api/gen"
-	"github.com/Soyaka/entitment/internal/cache"
-	"github.com/Soyaka/entitment/internal/database"
-	"github.com/Soyaka/entitment/internal/kafka"
+	entitment "github.com/Soyaka/microlearn-entitment/api/gen"
+	"github.com/Soyaka/microlearn-entitment/internal/cache"
+	"github.com/Soyaka/microlearn-entitment/internal/database"
+	"github.com/Soyaka/microlearn-entitment/internal/kafka"
 )
 
 type GlobalHandler struct {

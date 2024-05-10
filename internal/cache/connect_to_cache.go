@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"time"
 
-	entitment "github.com/Soyaka/entitment/api/gen"
+	entitment "github.com/Soyaka/microlearn-entitment/api/gen"
 	"github.com/fatih/color"
 	"github.com/go-redis/redis"
 )
